@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RKLM School is a premium girls' school nurturing confident, compassionate, and future-ready young women from Nursery to Grade XII." />
+  <meta name="description" content="RKLM Girls Senior Secondary School is a CBSE-affiliated girls school established in 1949 under the Ramjas Foundation in Karol Bagh, New Delhi." />
   <title>RKLM School | Girls' School in New Delhi</title>
   <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
@@ -402,9 +402,7 @@
 
     .feature-card,
     .program-card,
-    .icon-card,
     .activity-card,
-    .testimonial-card,
     .stat-card {
       background: var(--white);
       border: 1px solid var(--line);
@@ -414,9 +412,7 @@
 
     .feature-card:hover,
     .program-card:hover,
-    .icon-card:hover,
     .activity-card:hover,
-    .testimonial-card:hover,
     .stat-card:hover {
       border-color: rgba(216, 173, 69, 0.54);
       box-shadow: var(--shadow);
@@ -425,8 +421,7 @@
 
     .feature-card,
     .program-card,
-    .activity-card,
-    .testimonial-card {
+    .activity-card {
       padding: 24px;
     }
 
@@ -467,24 +462,6 @@
       font-weight: 900;
       margin: 0 -24px 22px;
       padding: 18px 24px;
-    }
-
-    .facilities {
-      background: #f7f9fc;
-    }
-
-    .icon-card {
-      align-items: center;
-      display: flex;
-      gap: 14px;
-      min-height: 92px;
-      padding: 18px;
-    }
-
-    .icon-card i {
-      color: var(--gold);
-      font-size: 1.5rem;
-      width: 30px;
     }
 
     .student-life {
@@ -529,34 +506,6 @@
       display: block;
       font-weight: 800;
       margin-top: 10px;
-    }
-
-    .testimonials {
-      background: linear-gradient(180deg, #fff, #fff5f9);
-    }
-
-    .stars {
-      color: var(--gold);
-      letter-spacing: 0.08em;
-      margin-bottom: 14px;
-    }
-
-    .parent {
-      align-items: center;
-      display: flex;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .avatar {
-      background: var(--navy);
-      border-radius: 50%;
-      color: var(--white);
-      display: grid;
-      font-weight: 900;
-      height: 44px;
-      place-items: center;
-      width: 44px;
     }
 
     .admissions {
@@ -640,20 +589,20 @@
 
     .map-placeholder {
       align-items: center;
-      background:
-        linear-gradient(rgba(7, 27, 58, 0.72), rgba(7, 27, 58, 0.72)),
-        url("https://images.unsplash.com/photo-1577086664693-894d8405334a?auto=format&fit=crop&w=1200&q=80") center/cover;
+      background: #f7f9fc;
       color: var(--white);
       display: grid;
       min-height: 280px;
       place-items: center;
+      overflow: hidden;
+      padding: 0;
       text-align: center;
     }
 
-    .map-placeholder i {
-      color: var(--gold);
-      font-size: 2rem;
-      margin-bottom: 10px;
+    .map-placeholder iframe {
+      border: 0;
+      height: 360px;
+      width: 100%;
     }
 
     .site-footer {
@@ -786,18 +735,10 @@
       }
 
       .program-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .facility-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .activity-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
-      .testimonial-grid {
+      .activity-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
@@ -825,7 +766,6 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#academics">Academics</a></li>
-        <li><a href="#facilities">Facilities</a></li>
         <li><a href="#life">Student Life</a></li>
         <li><a href="#admissions">Admissions</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -837,7 +777,6 @@
     <div class="mobile-panel" id="mobilePanel">
       <a href="#about">About</a>
       <a href="#academics">Academics</a>
-      <a href="#facilities">Facilities</a>
       <a href="#life">Student Life</a>
       <a href="#admissions">Admissions</a>
       <a href="#contact">Contact</a>
@@ -845,33 +784,34 @@
   </header>
 
   <main id="home">
+    <!-- Updated Hero Section: RKLM School history, Grade VI-XII focus, and current stats -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-content reveal">
-          <span class="hero-kicker"><i class="fa-solid fa-crown"></i> Premium Girls' Education</span>
+          <span class="hero-kicker"><i class="fa-solid fa-crown"></i> CBSE Girls' Education Since 1949</span>
           <h1>Empowering Young Women to Lead, Learn &amp; Inspire</h1>
-          <p>Providing quality education, leadership opportunities, and holistic development for girls from Nursery to Grade XII.</p>
+          <p>Providing quality education for girls from Grade VI to Grade XII since 1949.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#admissions"><i class="fa-solid fa-file-signature"></i>Apply for Admission</a>
             <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-calendar-check"></i>Schedule a Campus Visit</a>
           </div>
         </div>
         <div class="highlight-grid reveal" aria-label="Quick highlights">
-          <div class="highlight"><strong>25+</strong><span>Years of Academic Excellence</span></div>
-          <div class="highlight"><strong>2,500+</strong><span>Students</span></div>
-          <div class="highlight"><strong>100+</strong><span>Qualified Faculty Members</span></div>
-          <div class="highlight"><strong>95%</strong><span>Board Examination Success Rate</span></div>
+          <div class="highlight"><strong>88+</strong><span>Years of Academic Excellence</span></div>
+          <div class="highlight"><strong>520+</strong><span>Students</span></div>
+          <div class="highlight"><strong>25+</strong><span>Faculty Members</span></div>
+          <div class="highlight"><strong>100%</strong><span>Board Exam Success Rate</span></div>
         </div>
       </div>
     </section>
 
+    <!-- Updated About Section: RKLM School official background and location -->
     <section class="section" id="about">
       <div class="container split">
         <div class="reveal">
           <span class="section-eyebrow">About Us</span>
           <h2 class="section-title">About RKLM School</h2>
-          <p class="section-copy">RKLM School is dedicated to nurturing confident, compassionate, and academically accomplished young women. Our mission is to provide a safe and inspiring learning environment where every student can discover her potential and develop the skills needed to thrive in a rapidly changing world.</p>
-          <p class="section-copy">We believe in combining academic excellence with character development, creativity, leadership, and community service to create future-ready global citizens.</p>
+          <p class="section-copy">RKLM Girls Senior Secondary School is a CBSE-affiliated girls school established in 1949 under the Ramjas Foundation. Located at 2107/37 Desh Bandhu Gupta Road, Karol Bagh, New Delhi, it provides education from Grade VI to XII and focuses on academic excellence, values, leadership and holistic development.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#academics"><i class="fa-solid fa-graduation-cap"></i>Explore Academics</a>
             <a class="btn btn-outline" href="#life"><i class="fa-solid fa-masks-theater"></i>Student Life</a>
@@ -879,80 +819,84 @@
         </div>
         <div class="media-frame reveal">
           <img src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?auto=format&fit=crop&w=1200&q=82" alt="Students studying together in a bright classroom" loading="lazy" />
-          <div class="media-note">A caring campus where girls grow with confidence.</div>
+          <div class="media-note">Established in 1949 under the Ramjas Foundation.</div>
         </div>
       </div>
     </section>
 
-    <section class="section principal">
+    <!-- New Founder Section: Ramjas Foundation legacy and Rai Kedar Nath Ji -->
+    <section class="section">
       <div class="container">
         <div class="principal-card reveal">
-          <img src="https://images.unsplash.com/photo-1590650213165-c1fef80648c4?auto=format&fit=crop&w=900&q=82" alt="Principal standing in a school corridor" loading="lazy" />
           <div>
-            <span class="section-eyebrow">Principal's Message</span>
-            <h2 class="section-title">Message from the Principal</h2>
-            <p class="section-copy">Welcome to RKLM School. Our goal is to provide every student with opportunities to excel academically while developing confidence, integrity, and leadership qualities. We strive to create an environment where curiosity is encouraged, talents are celebrated, and lifelong learning becomes a passion.</p>
-            <p class="section-copy">Together with our dedicated teachers and supportive parents, we prepare young women to become successful professionals and responsible citizens.</p>
-            <p class="signature">Dr. Ananya Sharma</p>
-            <p class="muted">Principal</p>
+            <span class="section-eyebrow">Our Legacy</span>
+            <h2 class="section-title">Our Founder</h2>
+            <p class="signature">Rai Kedar Nath Ji</p>
+            <p class="section-copy">"The lamp can never light another lamp unless it continues to burn its own flame."</p>
+            <p class="section-copy">RKLM School is part of the Ramjas Foundation legacy, carrying forward a long-standing commitment to education, values, service and the empowerment of young learners.</p>
+          </div>
+          <div class="media-frame">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=82" alt="Open books representing the Ramjas Foundation educational legacy" loading="lazy" />
+            <div class="media-note">Part of the Ramjas Foundation legacy.</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Updated Principal Section: school incharge details and photo-ready structure -->
+    <section class="section principal">
+      <div class="container">
+        <div class="principal-card reveal">
+          <img src="https://images.unsplash.com/photo-1590650213165-c1fef80648c4?auto=format&fit=crop&w=900&q=82" alt="School incharge portrait placeholder ready for actual photo replacement" loading="lazy" />
+          <div>
+            <span class="section-eyebrow">Principal's Message</span>
+            <h2 class="section-title">Message from the Principal</h2>
+            <p class="section-copy">Welcome to RKLM School. As a CBSE-affiliated girls senior secondary school under the Ramjas Foundation legacy, we are committed to helping every student from Grade VI to XII grow with confidence, discipline, values and academic strength.</p>
+            <p class="section-copy">Together with our dedicated teachers and supportive parents, we work to create a learning environment where girls are encouraged to lead, serve, excel and become responsible citizens.</p>
+            <p class="signature">Mrs. Meenakshi Aggarwal</p>
+            <p class="muted">School Incharge</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Updated Why Choose Us Section: RKLM-specific strengths -->
     <section class="section">
       <div class="container">
         <span class="section-eyebrow reveal">Why Choose Us</span>
-        <h2 class="section-title reveal">Why Parents Trust Us</h2>
+        <h2 class="section-title reveal">Why Parents Choose Us</h2>
         <div class="grid feature-grid">
           <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-award"></i></div><h3 class="card-title">Academic Excellence</h3><p class="card-text">Consistently outstanding examination results.</p></article>
           <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div><h3 class="card-title">Experienced Faculty</h3><p class="card-text">Highly qualified and dedicated educators.</p></article>
           <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-shield-heart"></i></div><h3 class="card-title">Safe Campus</h3><p class="card-text">Secure environment with modern safety systems.</p></article>
-          <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-flask-vial"></i></div><h3 class="card-title">STEM Learning</h3><p class="card-text">Well-equipped science and computer laboratories.</p></article>
-          <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-person-running"></i></div><h3 class="card-title">Sports &amp; Fitness</h3><p class="card-text">Comprehensive athletic and wellness programs.</p></article>
+          <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-certificate"></i></div><h3 class="card-title">CBSE Affiliation</h3><p class="card-text">A structured CBSE curriculum for Classes VI to XII.</p></article>
+          <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div><h3 class="card-title">Girls-focused Learning Environment</h3><p class="card-text">A supportive space designed for girls' confidence, voice and growth.</p></article>
           <article class="feature-card reveal"><div class="card-icon"><i class="fa-solid fa-microphone-lines"></i></div><h3 class="card-title">Leadership Development</h3><p class="card-text">Student councils, public speaking, and community engagement.</p></article>
         </div>
       </div>
     </section>
 
+    <!-- Updated Academic Programs Section: Grade VI-XII structure -->
     <section class="section" id="academics">
       <div class="container">
         <span class="section-eyebrow reveal">Learning Pathways</span>
         <h2 class="section-title reveal">Academic Programs</h2>
         <div class="grid program-grid">
-          <article class="program-card reveal"><div class="program-band">Nursery to Grade II</div><h3 class="card-title">Early Years</h3><p class="card-text">A joyful foundation focused on language, numbers, creativity, social confidence, and play-based discovery.</p></article>
-          <article class="program-card reveal"><div class="program-band">Grades III to V</div><h3 class="card-title">Primary School</h3><p class="card-text">A balanced program that builds curiosity, study habits, collaboration, and essential academic skills.</p></article>
-          <article class="program-card reveal"><div class="program-band">Grades VI to VIII</div><h3 class="card-title">Middle School</h3><p class="card-text">Inquiry-rich learning with stronger subject depth, digital skills, labs, arts, sports, and leadership exposure.</p></article>
-          <article class="program-card reveal"><div class="program-band">Grades IX to XII</div><h3 class="card-title">Senior School</h3><p class="card-text">Board-focused academics, career guidance, competitive preparation, mentoring, and university readiness.</p></article>
+          <article class="program-card reveal"><div class="program-band">Grades VI-VIII</div><h3 class="card-title">Middle School</h3><p class="card-text">A strong academic foundation with values, discipline, confidence-building and guided subject exploration.</p></article>
+          <article class="program-card reveal"><div class="program-band">Grades IX-X</div><h3 class="card-title">Secondary School</h3><p class="card-text">Focused CBSE learning that prepares students for board examinations, leadership and responsible citizenship.</p></article>
+          <article class="program-card reveal"><div class="program-band">Grades XI-XII</div><h3 class="card-title">Senior Secondary School</h3><p class="card-text">Senior classes designed for academic excellence, career readiness, mentoring and holistic development.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section facilities" id="facilities">
-      <div class="container">
-        <span class="section-eyebrow reveal">Campus</span>
-        <h2 class="section-title reveal">World-Class Facilities</h2>
-        <div class="grid facility-grid">
-          <div class="icon-card reveal"><i class="fa-solid fa-display"></i><strong>Smart Classrooms</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-vial-circle-check"></i><strong>Science Laboratories</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-computer"></i><strong>Computer Labs</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-book-open-reader"></i><strong>Library</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-basketball"></i><strong>Indoor Sports Complex</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-volleyball"></i><strong>Outdoor Playgrounds</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-palette"></i><strong>Art &amp; Music Studios</strong></div>
-          <div class="icon-card reveal"><i class="fa-solid fa-kit-medical"></i><strong>Medical Room</strong></div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Updated Beyond Academics Section: robotics removed and intro refreshed -->
     <section class="section student-life" id="life">
       <div class="container">
         <span class="section-eyebrow reveal">Beyond Academics</span>
         <h2 class="section-title reveal">Beyond Academics</h2>
-        <p class="section-copy reveal">At RKLM School, education extends beyond the classroom. Students participate in a wide range of activities that encourage creativity, teamwork, leadership, and personal growth.</p>
+        <p class="section-copy reveal">At RKLM School, education extends beyond textbooks through activities that encourage expression, social responsibility, teamwork, leadership and personal growth.</p>
         <div class="grid activity-grid">
           <article class="activity-card reveal"><div class="card-icon"><i class="fa-solid fa-comments"></i></div><h3 class="card-title">Debate Club</h3><p class="card-text">Students develop voice, logic, poise, and persuasive communication.</p></article>
-          <article class="activity-card reveal"><div class="card-icon"><i class="fa-solid fa-robot"></i></div><h3 class="card-title">Robotics Club</h3><p class="card-text">Hands-on coding, engineering challenges, and innovation projects.</p></article>
           <article class="activity-card reveal"><div class="card-icon"><i class="fa-solid fa-music"></i></div><h3 class="card-title">Dance &amp; Music</h3><p class="card-text">Performance opportunities across classical, contemporary, and choral arts.</p></article>
           <article class="activity-card reveal"><div class="card-icon"><i class="fa-solid fa-seedling"></i></div><h3 class="card-title">Environmental Initiatives</h3><p class="card-text">Eco-clubs, campus drives, and conservation awareness programs.</p></article>
           <article class="activity-card reveal"><div class="card-icon"><i class="fa-solid fa-hands-holding-child"></i></div><h3 class="card-title">Community Service</h3><p class="card-text">Meaningful outreach that builds empathy and civic responsibility.</p></article>
@@ -961,38 +905,27 @@
       </div>
     </section>
 
+    <!-- Updated Achievements Section: RKLM legacy statistics -->
     <section class="section">
       <div class="container">
         <span class="section-eyebrow reveal">Results</span>
         <h2 class="section-title reveal">Our Achievements</h2>
         <div class="grid achievement-grid">
-          <div class="stat-card reveal"><strong>25+</strong><span>Years of Excellence</span></div>
-          <div class="stat-card reveal"><strong>10,000+</strong><span>Alumni</span></div>
-          <div class="stat-card reveal"><strong>95%</strong><span>Board Success Rate</span></div>
-          <div class="stat-card reveal"><strong>150+</strong><span>Awards Won</span></div>
-          <div class="stat-card reveal"><strong>500+</strong><span>University Placements</span></div>
-          <div class="stat-card reveal"><strong>50+</strong><span>Annual Events</span></div>
+          <div class="stat-card reveal"><strong>88+</strong><span>Years of Excellence</span></div>
+          <div class="stat-card reveal"><strong>500,000+</strong><span>Alumni</span></div>
+          <div class="stat-card reveal"><strong>100%</strong><span>Board Success Rate</span></div>
+          <div class="stat-card reveal"><strong>60+</strong><span>Awards Won</span></div>
+          <div class="stat-card reveal"><strong>40+</strong><span>Annual Events</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section testimonials">
-      <div class="container">
-        <span class="section-eyebrow reveal">Testimonials</span>
-        <h2 class="section-title reveal">What Parents Say</h2>
-        <div class="grid testimonial-grid">
-          <article class="testimonial-card reveal"><div class="stars" aria-label="Five stars">★★★★★</div><p class="card-text">The academic guidance at RKLM School has been exceptional. My daughter has become more disciplined, curious, and confident in every subject.</p><div class="parent"><span class="avatar">M</span><div><strong>Meera Kapoor</strong><p class="muted">Parent, Grade X</p></div></div></article>
-          <article class="testimonial-card reveal"><div class="stars" aria-label="Five stars">★★★★★</div><p class="card-text">We feel deeply reassured by the safe campus and attentive staff. The school balances warmth with professionalism beautifully.</p><div class="parent"><span class="avatar">S</span><div><strong>Sanjay Malhotra</strong><p class="muted">Parent, Grade VI</p></div></div></article>
-          <article class="testimonial-card reveal"><div class="stars" aria-label="Five stars">★★★★★</div><p class="card-text">Teachers know each child personally and encourage her strengths. The faculty support has made a remarkable difference.</p><div class="parent"><span class="avatar">A</span><div><strong>Anita Verma</strong><p class="muted">Parent, Grade III</p></div></div></article>
-        </div>
-      </div>
-    </section>
-
+    <!-- Updated Admissions Section: Grades VI-XII admissions -->
     <section class="section admissions" id="admissions">
       <div class="container reveal">
         <span class="section-eyebrow">Admissions</span>
-        <h2 class="section-title">Admissions Open for 2026-27</h2>
-        <p class="section-copy">Applications are now being accepted for all grades. We invite families to visit our campus and experience our vibrant learning community.</p>
+        <h2 class="section-title">Admissions Open for Grades VI to XII</h2>
+        <p class="section-copy">Applications are now being accepted for eligible classes from Grade VI to Grade XII. We invite families to connect with the school and learn more about RKLM's academic environment.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i>Apply Now</a>
           <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-download"></i>Download Prospectus</a>
@@ -1000,6 +933,7 @@
       </div>
     </section>
 
+    <!-- Updated Contact Section: official address, phone, email, grade placeholder and embedded map -->
     <section class="section" id="contact">
       <div class="container">
         <span class="section-eyebrow reveal">Contact</span>
@@ -1007,57 +941,56 @@
         <div class="contact-layout">
           <div class="contact-info reveal">
             <h3 class="card-title">School Address</h3>
-            <div class="contact-item"><i class="fa-solid fa-location-dot"></i><p>123 Education Avenue,<br />New Delhi, India</p></div>
+            <div class="contact-item"><i class="fa-solid fa-location-dot"></i><p>Rai Kedar Nath L.M. Girls Sr. Sec. School<br />2107/37 Desh Bandhu Gupta Road<br />Karol Bagh, New Delhi - 110005</p></div>
             <h3 class="card-title" style="margin-top: 26px;">Contact Details</h3>
-            <div class="contact-item"><i class="fa-solid fa-phone"></i><p>+91 98765 43210</p></div>
-            <div class="contact-item"><i class="fa-solid fa-envelope"></i><p>admissions@rklmschool.edu</p></div>
-            <div class="contact-item"><i class="fa-solid fa-globe"></i><p>www.rklmschool.edu</p></div>
+            <div class="contact-item"><i class="fa-solid fa-phone"></i><p>28752854</p></div>
+            <div class="contact-item"><i class="fa-solid fa-envelope"></i><p>rklmschool@gmail.com</p></div>
           </div>
           <form class="contact-form reveal" aria-label="Contact form">
             <div class="form-grid">
               <div class="field"><label for="name">Parent Name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
               <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
               <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
-              <div class="field"><label for="grade">Grade Interested In</label><input id="grade" name="grade" type="text" placeholder="Nursery, Grade VI, Grade XI..." /></div>
+              <div class="field"><label for="grade">Grade Interested In</label><input id="grade" name="grade" type="text" placeholder="Grade VI, VII, VIII, IX, XI" /></div>
               <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
               <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Enquiry</button>
             </div>
           </form>
-          <div class="map-placeholder reveal" aria-label="Google Maps placeholder">
-            <div>
-              <i class="fa-solid fa-map-location-dot"></i>
-              <h3>Google Maps Placeholder</h3>
-              <p>RKLM School, 123 Education Avenue, New Delhi</p>
-            </div>
+          <div class="map-placeholder reveal" aria-label="Google Map for RKLM School">
+            <iframe
+              title="RKLM School location map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=2107%2F37%20Desh%20Bandhu%20Gupta%20Road%2C%20Karol%20Bagh%2C%20New%20Delhi%20110005&output=embed">
+            </iframe>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Updated Footer Section: RKLM School legacy and revised links -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <a class="brand footer-logo" href="#home"><span class="brand-mark">R</span><span>RKLM School</span></a>
-          <p>A premium girls' school dedicated to academic excellence, leadership, creativity, and compassionate citizenship.</p>
+          <p>Established in 1949 under the Ramjas Foundation, RKLM School is committed to girls education, academic excellence, values and holistic development.</p>
         </div>
         <div>
           <h3>Quick Links</h3>
           <ul class="footer-links">
             <li><a href="#about">About</a></li>
             <li><a href="#academics">Academics</a></li>
-            <li><a href="#facilities">Facilities</a></li>
             <li><a href="#admissions">Admissions</a></li>
           </ul>
         </div>
         <div>
           <h3>Programs</h3>
           <ul class="footer-links">
-            <li><a href="#academics">Early Years</a></li>
-            <li><a href="#academics">Primary School</a></li>
             <li><a href="#academics">Middle School</a></li>
-            <li><a href="#academics">Senior School</a></li>
+            <li><a href="#academics">Secondary School</a></li>
+            <li><a href="#academics">Senior Secondary School</a></li>
           </ul>
         </div>
         <div>
