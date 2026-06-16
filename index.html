@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="RKLM Girls Senior Secondary School is a CBSE-affiliated girls school established in 1949 under the Ramjas Foundation in Karol Bagh, New Delhi." />
   <title>RKLM School | Girls' School in New Delhi</title>
-  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://upload.wikimedia.org" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <style>
@@ -90,55 +90,6 @@
       font-size: 1.02rem;
       margin-top: 18px;
       max-width: 760px;
-    }
-
-    .btn {
-      align-items: center;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      cursor: pointer;
-      display: inline-flex;
-      font-weight: 800;
-      gap: 10px;
-      justify-content: center;
-      min-height: 48px;
-      padding: 12px 22px;
-      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--gold);
-      box-shadow: 0 12px 28px rgba(216, 173, 69, 0.28);
-      color: var(--navy);
-    }
-
-    .btn-primary:hover {
-      background: #e4bc5b;
-    }
-
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.42);
-      color: var(--white);
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    .btn-outline {
-      background: var(--white);
-      border-color: var(--line);
-      color: var(--navy);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--gold);
-      box-shadow: var(--shadow);
     }
 
     .site-header {
@@ -235,7 +186,7 @@
       align-items: end;
       background:
         linear-gradient(90deg, rgba(7, 27, 58, 0.92), rgba(7, 27, 58, 0.62), rgba(7, 27, 58, 0.18)),
-        url("https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1800&q=82") center/cover;
+        url("https://upload.wikimedia.org/wikipedia/commons/a/ac/Indian_school_students_with_their_teacher_at_Hnahthial.jpg") center/cover;
       color: var(--white);
       display: flex;
       min-height: calc(100svh - 76px);
@@ -289,13 +240,6 @@
       font-size: clamp(1.03rem, 3vw, 1.28rem);
       margin-top: 22px;
       max-width: 720px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 30px;
     }
 
     .highlight-grid {
@@ -375,11 +319,15 @@
       padding: 26px;
     }
 
-    .principal-card img {
-      aspect-ratio: 4 / 5;
-      border-radius: var(--radius);
-      object-fit: cover;
-      width: 100%;
+    .principal-message-card {
+      display: block;
+      margin-inline: auto;
+      max-width: 920px;
+      text-align: center;
+    }
+
+    .principal-message-card .section-copy {
+      margin-inline: auto;
     }
 
     .signature {
@@ -467,7 +415,7 @@
     .student-life {
       background:
         linear-gradient(rgba(7, 27, 58, 0.78), rgba(7, 27, 58, 0.78)),
-        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1800&q=82") center/cover fixed;
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Nuchhungi_English_Medium_School_Hnahthial_Lunglei_Mizoram_appreciation.jpg") center/cover fixed;
       color: var(--white);
     }
 
@@ -511,7 +459,7 @@
     .admissions {
       background:
         linear-gradient(100deg, rgba(7, 27, 58, 0.94), rgba(16, 44, 87, 0.82)),
-        url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1800&q=82") center/cover;
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Indian_school_children_at_Hnahthial.jpg") center/cover;
       color: var(--white);
     }
 
@@ -524,14 +472,24 @@
       display: grid;
       gap: 26px;
       margin-top: 34px;
+      margin-inline: auto;
+      max-width: 980px;
     }
 
     .contact-info,
-    .contact-form,
     .map-placeholder {
       border: 1px solid var(--line);
       border-radius: var(--radius);
       padding: 24px;
+    }
+
+    .contact-info {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      margin-inline: auto;
+      max-width: 920px;
+      padding: 30px;
+      width: 100%;
     }
 
     .contact-item {
@@ -546,45 +504,6 @@
       font-size: 1.1rem;
       margin-top: 4px;
       width: 22px;
-    }
-
-    .form-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .field {
-      display: grid;
-      gap: 8px;
-    }
-
-    .field label {
-      color: var(--navy);
-      font-size: 0.88rem;
-      font-weight: 850;
-    }
-
-    .field input,
-    .field textarea {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      color: var(--ink);
-      min-height: 48px;
-      padding: 12px 14px;
-      transition: border-color 180ms ease, box-shadow 180ms ease;
-      width: 100%;
-    }
-
-    .field textarea {
-      min-height: 126px;
-      resize: vertical;
-    }
-
-    .field input:focus,
-    .field textarea:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 4px rgba(216, 173, 69, 0.14);
-      outline: 0;
     }
 
     .map-placeholder {
@@ -742,12 +661,14 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
-      .contact-layout {
-        grid-template-columns: 0.85fr 1.15fr;
+      .map-placeholder {
+        grid-column: auto;
       }
 
-      .map-placeholder {
-        grid-column: 1 / -1;
+      .principal-message-card {
+        display: block;
+        max-width: 920px;
+        text-align: center;
       }
 
       .footer-grid {
@@ -791,10 +712,6 @@
           <span class="hero-kicker"><i class="fa-solid fa-crown"></i> CBSE Girls' Education Since 1949</span>
           <h1>Empowering Young Women to Lead, Learn &amp; Inspire</h1>
           <p>Providing quality education for girls from Grade VI to Grade XII since 1949.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#admissions"><i class="fa-solid fa-file-signature"></i>Apply for Admission</a>
-            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-calendar-check"></i>Schedule a Campus Visit</a>
-          </div>
         </div>
         <div class="highlight-grid reveal" aria-label="Quick highlights">
           <div class="highlight"><strong>88+</strong><span>Years of Academic Excellence</span></div>
@@ -812,13 +729,9 @@
           <span class="section-eyebrow">About Us</span>
           <h2 class="section-title">About RKLM School</h2>
           <p class="section-copy">RKLM Girls Senior Secondary School is a CBSE-affiliated girls school established in 1949 under the Ramjas Foundation. Located at 2107/37 Desh Bandhu Gupta Road, Karol Bagh, New Delhi, it provides education from Grade VI to XII and focuses on academic excellence, values, leadership and holistic development.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#academics"><i class="fa-solid fa-graduation-cap"></i>Explore Academics</a>
-            <a class="btn btn-outline" href="#life"><i class="fa-solid fa-masks-theater"></i>Student Life</a>
-          </div>
         </div>
         <div class="media-frame reveal">
-          <img src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?auto=format&fit=crop&w=1200&q=82" alt="Students studying together in a bright classroom" loading="lazy" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Tamil_Nadu_school_kids.jpg" alt="Indian school students learning together in a classroom" loading="lazy" />
           <div class="media-note">Established in 1949 under the Ramjas Foundation.</div>
         </div>
       </div>
@@ -836,18 +749,17 @@
             <p class="section-copy">RKLM School is part of the Ramjas Foundation legacy, carrying forward a long-standing commitment to education, values, service and the empowerment of young learners.</p>
           </div>
           <div class="media-frame">
-            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=82" alt="Open books representing the Ramjas Foundation educational legacy" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Indian_school_students_with_their_teacher_at_Hnahthial.jpg" alt="Indian school students with their teacher in a classroom setting" loading="lazy" />
             <div class="media-note">Part of the Ramjas Foundation legacy.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Updated Principal Section: school incharge details and photo-ready structure -->
+    <!-- Updated Principal Section: centered school incharge message without photo -->
     <section class="section principal">
       <div class="container">
-        <div class="principal-card reveal">
-          <img src="https://images.unsplash.com/photo-1590650213165-c1fef80648c4?auto=format&fit=crop&w=900&q=82" alt="School incharge portrait placeholder ready for actual photo replacement" loading="lazy" />
+        <div class="principal-card principal-message-card reveal">
           <div>
             <span class="section-eyebrow">Principal's Message</span>
             <h2 class="section-title">Message from the Principal</h2>
@@ -920,20 +832,16 @@
       </div>
     </section>
 
-    <!-- Updated Admissions Section: Grades VI-XII admissions -->
+    <!-- Updated Admissions Section: Grades VI-IX and Grade XI admissions -->
     <section class="section admissions" id="admissions">
       <div class="container reveal">
         <span class="section-eyebrow">Admissions</span>
-        <h2 class="section-title">Admissions Open for Grades VI to XII</h2>
-        <p class="section-copy">Applications are now being accepted for eligible classes from Grade VI to Grade XII. We invite families to connect with the school and learn more about RKLM's academic environment.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i>Apply Now</a>
-          <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-download"></i>Download Prospectus</a>
-        </div>
+        <h2 class="section-title">Admissions Open for Grades VI to IX &amp; Grade XI</h2>
+        <p class="section-copy">Applications are now being accepted for Grade VI, Grade VII, Grade VIII, Grade IX and Grade XI. Families may contact the school office for eligibility details and admission guidance.</p>
       </div>
     </section>
 
-    <!-- Updated Contact Section: official address, phone, email, grade placeholder and embedded map -->
+    <!-- Updated Contact Section: official address, phone, email and embedded map -->
     <section class="section" id="contact">
       <div class="container">
         <span class="section-eyebrow reveal">Contact</span>
@@ -943,19 +851,9 @@
             <h3 class="card-title">School Address</h3>
             <div class="contact-item"><i class="fa-solid fa-location-dot"></i><p>Rai Kedar Nath L.M. Girls Sr. Sec. School<br />2107/37 Desh Bandhu Gupta Road<br />Karol Bagh, New Delhi - 110005</p></div>
             <h3 class="card-title" style="margin-top: 26px;">Contact Details</h3>
-            <div class="contact-item"><i class="fa-solid fa-phone"></i><p>28752854</p></div>
+            <div class="contact-item"><i class="fa-solid fa-phone"></i><p>2083 8010</p></div>
             <div class="contact-item"><i class="fa-solid fa-envelope"></i><p>rklmschool@gmail.com</p></div>
           </div>
-          <form class="contact-form reveal" aria-label="Contact form">
-            <div class="form-grid">
-              <div class="field"><label for="name">Parent Name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
-              <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
-              <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
-              <div class="field"><label for="grade">Grade Interested In</label><input id="grade" name="grade" type="text" placeholder="Grade VI, VII, VIII, IX, XI" /></div>
-              <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
-              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Enquiry</button>
-            </div>
-          </form>
           <div class="map-placeholder reveal" aria-label="Google Map for RKLM School">
             <iframe
               title="RKLM School location map"
@@ -996,10 +894,7 @@
         <div>
           <h3>Connect</h3>
           <div class="socials" aria-label="Social media links">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/rklmgirls.1949/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -1038,15 +933,6 @@
 
     document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
-    document.querySelector(".contact-form").addEventListener("submit", (event) => {
-      event.preventDefault();
-      const button = event.currentTarget.querySelector("button");
-      button.innerHTML = '<i class="fa-solid fa-circle-check"></i>Enquiry Sent';
-      setTimeout(() => {
-        button.innerHTML = '<i class="fa-solid fa-paper-plane"></i>Send Enquiry';
-        event.currentTarget.reset();
-      }, 1800);
-    });
   </script>
 </body>
 </html>
