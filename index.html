@@ -318,6 +318,39 @@
       padding: 26px;
     }
 
+    .founder-card {
+      align-items: center;
+      gap: 34px;
+      overflow: hidden;
+    }
+
+    .founder-copy {
+      max-width: 560px;
+    }
+
+    .founder-portrait-frame {
+      align-items: center;
+      background: linear-gradient(135deg, #fff9ed, #fff);
+      border: 1px solid rgba(216, 173, 69, 0.34);
+      border-radius: 16px;
+      box-shadow: 0 24px 60px rgba(7, 27, 58, 0.14);
+      display: flex;
+      justify-content: center;
+      min-height: 380px;
+      padding: 16px;
+      width: 100%;
+    }
+
+    .founder-portrait-frame img {
+      border-radius: 14px;
+      display: block;
+      height: auto;
+      max-height: 620px;
+      max-width: 100%;
+      object-fit: contain;
+      width: auto;
+    }
+
     .principal-message-card {
       display: block;
       margin-inline: auto;
@@ -648,6 +681,17 @@
         padding: 34px;
       }
 
+      .founder-card {
+        grid-template-columns: minmax(0, 0.45fr) minmax(0, 0.55fr);
+        gap: 46px;
+        padding: 46px;
+      }
+
+      .founder-portrait-frame {
+        min-height: 420px;
+        padding: 26px;
+      }
+
       .feature-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
@@ -739,17 +783,16 @@
     <!-- New Founder Section: Ramjas Foundation legacy and Rai Kedar Nath Ji -->
     <section class="section">
       <div class="container">
-        <div class="principal-card reveal">
-          <div>
+        <div class="principal-card founder-card reveal">
+          <div class="founder-copy">
             <span class="section-eyebrow">Our Legacy</span>
             <h2 class="section-title">Our Founder</h2>
             <p class="signature">Rai Kedar Nath Ji</p>
             <p class="section-copy">"The lamp can never light another lamp unless it continues to burn its own flame."</p>
             <p class="section-copy">RKLM School is part of the Ramjas Foundation legacy, carrying forward a long-standing commitment to education, values, service and the empowerment of young learners.</p>
           </div>
-          <div class="media-frame">
-            <img src="assets/images/rklm-office.jpg" alt="RKLM School office with founder portrait and school awards" loading="lazy" />
-            <div class="media-note">Part of the Ramjas Foundation legacy.</div>
+          <div class="founder-portrait-frame" aria-label="Portrait of Rai Kedar Nath Ji">
+            <img src="assets/images/rklm-founder-portrait.jpg" alt="Portrait of Rai Kedar Nath Ji, founder of RKLM School" loading="lazy" />
           </div>
         </div>
       </div>
